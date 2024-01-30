@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/passwordTextView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
@@ -20,11 +21,11 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="152dp"
+        android:layout_marginEnd="144dp"
         android:layout_marginBottom="28dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText" />
+        android:text="Username"
+        app:layout_constraintBottom_toTopOf="@+id/usernameTextView"
+        app:layout_constraintEnd_toEndOf="@+id/usernameTextView" />
 
     <TextView
         android:id="@+id/textView3"
@@ -32,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="152dp"
         android:layout_marginBottom="24dp"
-        android:text="TextView"
+        android:text="Password"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword" />
 
@@ -45,17 +46,16 @@
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/usernameTextView" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/usernameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="176dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

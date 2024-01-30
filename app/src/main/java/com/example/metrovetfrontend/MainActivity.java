@@ -21,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+                //Intent i = new Intent(getApplicationContext(), LoginActivity.class);
 
-                i.putExtra("is_user_admin", true);
+                //i.putExtra("is_user_admin", true);
 
-                startActivity(i);
+                //startActivity(i);
 
             }
         });
